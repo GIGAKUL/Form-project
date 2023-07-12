@@ -8,9 +8,10 @@
 body{
   min-height: 100vh;
   background: url(images/6213932.jpg);
-  background-size: contain;
-  background-position: center ;
+  background-size: cover;
   display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
 }
@@ -98,6 +99,23 @@ header {
   backdrop-filter: blur(20px);
   box-shadow: 0 0 30px rgba(0, 0, 0, .5);
   display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .icon-close{
+  position: absolute;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background-color: #162938;
+  font-size: 2em;
+  color: white;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -122,7 +140,7 @@ header {
 .input-box label{
   position: absolute;
   top: 50%;
-  left: 50px;
+  left: 0px;
   transform: translateY(-50%);
   font-size: 1em;
   color: #162938;
@@ -144,8 +162,9 @@ header {
   border:none;
   font: 1rem;
   color: #162938;
-  font-weight: 100;
+  font-weight: 600;
   padding: 0 35px 0 5px;
+  outline: none;
 }
 .input-box .icon{
   position: absolute;
@@ -153,4 +172,48 @@ header {
   font-size: 1.2em;
   color: #162938;
   line-height: 57px;
+}
+.remember-forgot {
+  font-size: .9em;
+  font-weight: 500;
+  color: #162938;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.remember-forgot label input {
+   accent-color: #162938 ;
+   margin-right: 3px;
+}
+.remember-forgot a {
+  color: #162938;
+}
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+.btn {
+  width: 100%;
+  min-height: 45px;
+  background-color: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor:pointer;
+  font-size: 1em;
+  color: white;
+  font-weight: 500;
+}
+.login-register {
+  font-size: .9em;
+  color: #162938;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+.login-register p a{
+  color: #162938;
+  font-weight: 600;
+}
+.login-register p a:hover{
+  text-decoration: underline;
 }
